@@ -72,6 +72,10 @@ header nav ul li a {
   font-size: 30px;
 }
 
+header nav ul li:first-child a {
+  margin-left: 20px;
+}
+
 /*make nav not look like links*/
 
 a {
