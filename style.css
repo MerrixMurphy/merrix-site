@@ -11,6 +11,17 @@ h3 {
   color: white;
 }
 
+/*list color*/
+
+li {
+  color: white;
+}
+
+main div ol li {
+  list-style: none;
+  margin-right: 40px;
+}
+
 /*class for 404 error message number*/
 
 .notfound {
@@ -61,17 +72,6 @@ header nav ul li a {
   font-size: 30px;
 }
 
-@media all and (max-width: 800px) {
-  header nav ul li a {
-    font-size: 20px;
-  }
-}
-
-@media all and (max-width: 600px) {
-  header nav ul li a {
-    font-size: 10px;
-  }
-}
 /*make nav not look like links*/
 
 a {
@@ -101,7 +101,7 @@ a:active {
 
 /*styling for the head of every page*/
 
-.projectheader {
+h1 {
   background-color: rgb(41, 35, 65);
   width: 70%;
   height: auto;
@@ -121,7 +121,7 @@ a:active {
 /*up the h3 size*/
 
 h3 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 /*body background color*/
@@ -138,31 +138,25 @@ main {
   margin: auto;
 }
 
-/*list color*/
-
-li {
-  color: white;
-}
-
 /*styling for footer*/
 
 footer {
   background-color: black;
 }
 
-footer div {
-  justify-content: center;
-}
-
 footer div ul {
   display: flex;
   list-style: none;
-  padding-left: 0;
 }
 
-footer div ul li a img {
-  width: 5%;
+footer div ul li {
+  flex-grow: 0.1;
+  width: 1px;
+  align-self: right;
+  justify-content: right;
+  margin-left: 0;
 }
+
 /*style for links for projects*/
 
 .projectlinks {
@@ -172,4 +166,63 @@ footer div ul li a img {
 h1 {
   color: white;
   text-align: center;
+  font-size: 60px;
+}
+
+@media all and (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .notfound {
+    font-size: 70px;
+  }
+  img {
+    width: 40%;
+  }
+  .worktitles {
+    font-size: 30px;
+  }
+  p,
+  a,
+  h2 {
+    font-size: 80%;
+  }
+  main div ul li {
+    font-size: 80%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  header nav ul li a {
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .notfound {
+    font-size: 40px;
+  }
+  img {
+    width: 30%;
+  }
+  .worktitles {
+    font-size: 20px;
+  }
+  p,
+  a,
+  h2 {
+    font-size: 60%;
+  }
+  main div ul li {
+    font-size: 60%;
+  }
 }
