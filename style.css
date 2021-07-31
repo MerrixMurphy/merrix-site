@@ -1,25 +1,31 @@
 /*commonly shared elements*/
 
-.worktitles, nav, .notfound, p, h2, a, h3{
-text-align: center;
-color: white
+.worktitles,
+nav,
+.notfound,
+p,
+h2,
+a,
+h3 {
+  text-align: center;
+  color: white;
 }
 
 /*class for 404 error message number*/
 
 .notfound {
-color: white;
-font-size:100px;
-font-family: Jazz LET, fantasy	;
-margin-top: 100px;
-margin-bottom: 100px;
-background-color: black;
-width: 70%;
-height: auto;
-margin: auto;
-margin-top: -8px;
-padding-top: 10px;
-padding-bottom: 10px;
+  color: white;
+  font-size: 100px;
+  font-family: Jazz LET, fantasy;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: black;
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-top: -8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*for image sizing*/
@@ -33,25 +39,39 @@ img {
 }
 
 /*style for nav*/
-
-nav {
-background-color: black;
-font-size: 20px;
-width: 100%;
-height: auto;
-overflow: auto;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-padding-top: 10px;
-padding-bottom: 10px;
-margin-bottom: -10px
+header {
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-nav a {
-  width: 25%;
-  height: auto;
-  float: left
+header nav {
+  display: flex;
+  justify-content: center;
 }
 
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+@media all and (max-width: 800px) {
+  header nav ul li a {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  header nav ul li a {
+    font-size: 10px;
+  }
+}
 /*make nav not look like links*/
 
 a {
@@ -60,94 +80,96 @@ a {
 
 /*coloring for nav*/
 a:link {
-  color: red
+  color: white;
 }
-a:visited{
- color: red
+a:visited {
+  color: white;
 }
 a:hover {
-  color: white;
+  color: red;
 }
 a:active {
-  color: white;
+  color: red;
 }
 
 /*style for list of apps made and icons*/
 
 .worktitles {
-font-size:40px;
-font: bold
+  font-size: 40px;
+  font: bold;
 }
 
 /*styling for the head of every page*/
 
 .projectheader {
-background-color: rgb(41,35,65);
-width: 70%;
-height: auto;
-margin: auto;
-margin-top: -8px;
-font-size:70px;
-padding-top: 10px;
-padding-bottom: 10px;
+  background-color: rgb(41, 35, 65);
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-top: -8px;
+  font-size: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*for secret lettering*/
 
 .secret {
-  font-size: 10px
+  font-size: 10px;
 }
 
 /*up the h3 size*/
 
 h3 {
-  font-size: 50px
+  font-size: 50px;
 }
 
 /*body background color*/
 
 body {
   background-image: url("images/pagebackground.jpg");
-  background-size: cover
+  background-size: cover;
 }
 
 main {
   background-color: black;
   width: 70%;
   height: auto;
-  margin: auto
+  margin: auto;
 }
 
 /*list color*/
 
 li {
-  color: white
+  color: white;
 }
 
 /*styling for footer*/
 
 footer {
-background-color: black;
-margin-bottom: -16px;
-margin-top: -17px
+  background-color: black;
 }
 
+footer div {
+  justify-content: center;
+}
+
+footer div ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+footer div ul li a img {
+  width: 5%;
+}
 /*style for links for projects*/
 
 .projectlinks {
-  text-align: center
+  text-align: center;
 }
 
 h1 {
   color: white;
-  text-align: center
-}
-
-/*logo styling*/
-
-.logo {
-  width: 5%;
-  height: auto;
-  display: inline-block;
-  margin: auto;
+  text-align: center;
 }
