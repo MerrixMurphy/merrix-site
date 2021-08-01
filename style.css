@@ -151,14 +151,16 @@ footer {
 footer div ul {
   display: flex;
   list-style: none;
+  justify-content: flex-end;
 }
 
 footer div ul li {
   flex-grow: 0.1;
   width: 1px;
-  align-self: right;
-  justify-content: right;
-  margin-left: 0;
+}
+
+footer div ul li a img {
+  margin-right: 20px;
 }
 
 /*style for links for projects*/
