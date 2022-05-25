@@ -1,11 +1,10 @@
 # merrix-site
 
-## Current Status:
-### Completed
+## Current Status: Completed
 
 This is the original developer website I created for myself when I started learning how to develop.
 
-### Original Description
+## Original Description
 
 A website for the developer, by the developer, about the developer.
 
